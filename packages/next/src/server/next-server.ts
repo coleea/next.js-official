@@ -1796,7 +1796,6 @@ export default class NextNodeServer extends BaseServer {
     const queryString = urlQueryToSearchParams({
       ...Object.fromEntries(initialUrl.searchParams),
       ...query,
-      ...params.params,
     }).toString()
 
     if (isDataReq) {
